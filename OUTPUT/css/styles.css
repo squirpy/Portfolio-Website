@@ -163,7 +163,7 @@ li:not(:last-child) {
 	fill:#c26c10;
 	vertical-align: top;
 	padding:0 2px 2px 0;
-	float:left;
+	
 	
 }
 
@@ -178,7 +178,7 @@ li:not(:last-child) {
 	z-index: 70;
 	width: 100%;
 	text-align:center;
-	display:block;
+	display:flex;
 	background-color:black;
 	height:85px;
 	padding-top:25px;
@@ -188,7 +188,7 @@ li:not(:last-child) {
 
 #header li {
 	margin:auto 0;
-	display:inline-block;
+	display:inline-flex;
 	font-size:18px;
 	margin: 43px .25vw .5vw 0;
 	padding-right:1vw;
