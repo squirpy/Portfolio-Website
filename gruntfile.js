@@ -43,8 +43,8 @@ module.exports = function(grunt) {
 		bower_concat: {
       		all: {
 				dest: {
-					js: 'INPUT/js/_bower.js',
-					css: 'OUTPUT/css/_bower.css'
+					js: 'INPUT/js/bower.js',
+					css: 'OUTPUT/css/bower.css'
 				},
 				mainFiles: {
 					'jquery': [
