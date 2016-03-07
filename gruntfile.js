@@ -84,7 +84,7 @@ module.exports = function(grunt) {
 
 
 	}); //initConfig
-	grunt.loadNpmTasks('grunt-eslint');
+	// grunt.loadNpmTasks('grunt-eslint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
