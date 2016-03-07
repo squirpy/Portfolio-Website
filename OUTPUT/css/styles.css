@@ -109,14 +109,15 @@ abbr,acronym { border: 0;
 	}
 }
 
-
-
+/*
+* {
+	border: 1px solid white;
+}*/
 
 
 /* ----------HEADER & FOOTER---------------*/
 
 #menu{
-	
 	width: 100%;
 }
 
@@ -177,7 +178,7 @@ li:not(:last-child) {
 	top:0;
 	z-index: 70;
 	width: 100%;
-	text-align:center;
+	justify-content: center;
 	display:flex;
 	background-color:black;
 	height:85px;
@@ -190,16 +191,16 @@ li:not(:last-child) {
 	margin:auto 0;
 	display:inline-flex;
 	font-size:18px;
-	margin: 43px .25vw .5vw 0;
-	padding-right:1vw;
+	margin: 43px 0 1.5vw 0;
+	padding: 0 1vw 0 1vw;
 
 
 }
 
 
 #footer{
-	text-align:center;
-	display:inline-block;
+	justify-content: center;
+	display:flex;
 	position:fixed;
 	bottom:0;
 	padding-bottom:20px;
@@ -213,7 +214,7 @@ li:not(:last-child) {
 
 
 #footer li {
-	display:inline-block;
+	display:inline-flex;
 	font-size:16px;
 	margin:auto 0;
 	padding: 0 3vw 0 3vw;
