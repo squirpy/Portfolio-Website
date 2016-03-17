@@ -54,9 +54,9 @@ abbr,acronym { border: 0;
 .border {
 	border:1px solid white;
 }
-* {
+/** {
 	border:1px solid white;
-}
+}*/
 
 /* ----------ANIMATED LOGO---------------*/
 
