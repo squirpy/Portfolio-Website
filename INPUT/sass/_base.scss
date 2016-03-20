@@ -21,11 +21,11 @@
 	padding-left:3vw;
 	padding-top:10px;
 	fill-opacity:0; 
-	-webkit-column-rule: #c26c10;
-	-moz-column-rule: #c26c10;
-	-o-column-rule: #c26c10;
-	column-rule: #c26c10;
-	stroke:#c26c10; 
+	-webkit-column-rule: $orange;
+	-moz-column-rule: $orange;
+	-o-column-rule: $orange;
+	column-rule: $orange;
+	stroke:$orange; 
 	stroke-width:16;
 	stroke-dasharray:10000px;
 	stroke-dashoffset:10000px;
@@ -53,7 +53,7 @@
 
 @keyframes fill {
 	to{
-		fill:#c26c10;
+		fill:$orange;
 		fill-opacity:1;
 	}
 }
@@ -92,7 +92,7 @@
 
 
 a:link, a:visited  {
-	color:#c26c10;
+	color:$orange;
 }
 
 a:hover {
@@ -110,7 +110,7 @@ li:not(:last-child) {
 
 .icon {
 	height:22px;
-	fill:#c26c10;
+	fill:$orange;
 	vertical-align: top;
 	padding:0 2px 2px 0;
 	
@@ -227,7 +227,7 @@ h1{
 	font-size: 1.3em;
 	font-family: "Lato";
 	font-weight: 700;
-	color:#c26c10;
+	color:$orange;
 }
 
 p{
