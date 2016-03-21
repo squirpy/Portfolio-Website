@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 			scripts: {
 				files: ['OUTPUT/**/*.html', 
 				'INPUT/scripts/**/*.js'],
-				tasks: ['eslint', 'concat']
+				tasks: ['concat']
 			},
 			css: {
 				files: ['INPUT/css/**/*.css',

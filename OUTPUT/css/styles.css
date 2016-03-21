@@ -183,7 +183,7 @@ li:not(:last-child) {
   position: fixed;
   text-align: right;
   padding: 44px 3vw 0 0;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 15px;
   line-height: 23px;
   z-index: 1000; }
@@ -220,12 +220,12 @@ li:not(:last-child) {
 
 h1 {
   font-size: 1.3em;
-  font-family: "Lato";
+  font-family: "Lato", serif;
   font-weight: 700;
   color: #c26c10; }
 
 p {
-  font-family: "Sanchez";
+  font-family: "Sanchez", sans-serif;
   font-size: .7em;
   text-align: center;
   color: white;
@@ -241,7 +241,7 @@ html {
   width: 100%; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", serif;
   font-size: 1.7vw; }
 
 .section {
@@ -249,12 +249,12 @@ body {
   position: relative; }
 
 .bold {
-  font-family: "Sanchez";
+  font-family: "Sanchez", sans-serif;
   font-weight: 400;
   font-size: 1.1em; }
 
 .italic {
-  font-family: "Sanchez";
+  font-family: "Sanchez", sans-serif;
   font-style: italic;
   font-weight: 400;
   letter-spacing: .9px;
