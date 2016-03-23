@@ -99,7 +99,7 @@ a:hover {
 	color:#dc7b13;
 }
 
-a:active, a:focus, {
+a:active {
 	color:white;
 }
 
