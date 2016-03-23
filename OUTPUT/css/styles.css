@@ -154,9 +154,7 @@ a:hover {
 	color:#dc7b13;
 }
 
-a:active, a:focus, {
-	color:white;
-}
+
 
 
 li:not(:last-child) {
