@@ -122,9 +122,6 @@ a:link, a:visited {
 a:hover {
   color: #dc7b13; }
 
-a:active {
-  color: white; }
-
 li:not(:last-child) {
   border-right: #353535 1px solid; }
 
