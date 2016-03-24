@@ -1,6 +1,15 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 
+
+		sass: {
+        	dist: {
+            	files: {
+                	'OUTPUT/css/styles.css': 'INPUT/sass/styles.scss'
+                }
+            }
+        }, //sass
+
 		watch: {
 			options: {
 				spawn: false,
@@ -9,11 +18,12 @@ module.exports = function(grunt) {
 			scripts: {
 				files: ['OUTPUT/**/*.html', 
 				'INPUT/scripts/**/*.js'],
-				tasks: ['eslint', 'concat']
+				tasks: ['concat']
 			},
 			css: {
-				files: ['INPUT/css/**/*.css'],
-			   tasks: ['concat_css']
+				files: ['INPUT/css/**/*.css',
+				'INPUT/sass/**/*.scss'],
+			   tasks: ['sass']
 			}
 		},
 
@@ -23,14 +33,15 @@ module.exports = function(grunt) {
 		// },
 		
 
-		concat_css: {
-		    options: {
-		    },
-		    all: {
-		      src: ["INPUT/css/*.css"],
-		      dest: "OUTPUT/css/styles.css"
-		    }
-		  }, //concat_css
+		// concat_css: {
+		//     options: {
+		//     },
+		//     all: {
+		//       src: ["INPUT/css/*.css"],
+		//       dest: "OUTPUT/css/styles.css"
+		//     }
+		//   }, //concat_css
+
 
 
 		concat : {
@@ -81,17 +92,18 @@ module.exports = function(grunt) {
 			}
 		} //connect
 
-
-
 	}); //initConfig
+
+
 	// grunt.loadNpmTasks('grunt-eslint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-concat-css');
+	// grunt.loadNpmTasks('grunt-concat-css');
 	grunt.loadNpmTasks('grunt-bower-concat');
 	
 
-	grunt.registerTask('default', ['bower_concat', 'concat', 'concat_css', 'connect', 'watch']);
+	grunt.registerTask('default', ['bower_concat', 'concat', 'connect', 'watch']);
 
 }; //wrapper function
